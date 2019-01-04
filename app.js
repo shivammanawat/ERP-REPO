@@ -28,7 +28,7 @@ app.use(function(req, res, next){
 
 
 
-var url = process.env.DATABASEURL || "mongodb://localhost/erpdb";
+var url = " mongodb://erpdb26:erpdb26@ds033875.mlab.com:33875/erpdbb" || "mongodb://localhost/erpdb";
 mongoose.connect(url,{ useNewUrlParser: true });
 
 // mongodb://<dbuser>:<dbpassword>@ds033875.mlab.com:33875/erpdbb
