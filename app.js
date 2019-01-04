@@ -305,7 +305,7 @@ app.get("/allprospectpage/:id", isLoggedIn,function (req, res) {
 app.get("/allprospectpage/:id/editprospect", isLoggedIn,function (req, res) {
   
     Prospect.findById(req.params.id, function (err, foundProspect) {
-    if(err)
+         if(err)
     {
         console.log(err);
     }
