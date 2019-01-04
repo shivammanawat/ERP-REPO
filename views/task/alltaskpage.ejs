@@ -1,0 +1,57 @@
+
+<% include ../partials/header %>
+
+
+
+ 
+<div class="container-fluid jumbotron padding bot">
+
+      
+           <div class="row padding">
+            
+            	<div class="col-12 text-center">
+            	         <a href="/alltaskpage/addtask"> <button type="button" class="btn btn-primary">ADD NEW TASK</button></a>      <br>   
+              
+           
+            	  	  	 <a class="btn btn-default" href="/leftnavigation"><i class="fa fa-arrow-left"></i> Go Back</a>  
+                 </div>
+            
+            </div>
+    
+            <div class="row padding">
+            
+                <div class="col-12 text-center">
+         
+                        <table class="table" align="center">
+                              <thead  style="background-color:#1C2331">
+                                <tr style="color:white">
+                                      <th scope="col">ID</th>
+                                      <th scope="col" >NAME</th> 
+                                      <th scope="col" >HANDLE BY</th> 
+                                      
+                                      <th scope="col" >DETAILS</th> 
+                                </tr>
+                              </thead>
+                            <tbody class=".text-white">
+                            <% tasks.forEach(function(task){ %>
+                                    <tr>
+                                      <td>  <%= task.id %></td>
+                                      <td>  <%= task.name %></td>
+                                      <td>  <%=task.handler%></td>
+                                      
+                                      <td>       
+                                     <a href="/alltaskpage/<%=task._id%>" class="btn btn-info">details</a>
+                                      </td>
+                                       
+                                    </tr>
+                             <% }); %>
+                            </tbody>
+                        </table>
+                 </div>
+            </div>
+</div>
+
+<% include ../partials/footer %>
+
+
+

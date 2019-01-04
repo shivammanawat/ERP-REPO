@@ -1,0 +1,56 @@
+
+
+
+<% include ../partials/header %>
+
+
+
+ 
+<div class="container-fluid jumbotron padding bot">
+
+      
+   <div class="row padding">
+    
+    	<div class="col-12 text-center">
+    	            <a href="/allprospectpage/addprospect"> <button type="button" class="btn btn-primary">ADD NEW PROSPECT</button></a>      <br>   
+      
+   
+    	  	  	 <a class="btn btn-default" href="/leftnavigation"><i class="fa fa-arrow-left"></i> Go Back</a>
+         </div>
+    </div>
+      
+ 
+
+ 
+    <table class="table" align="center">
+  <thead  style="background-color:#1C2331">
+    <tr style="color:white">
+          <th scope="col"> ID</th>
+          <th scope="col" >NAME</th> 
+          <th scope="col" >HANDLE BY</th> 
+          <th scope="col" >DETAILS</th> 
+    </tr>
+  </thead>
+  <tbody class=".text-white">
+        <% prospects.forEach(function(prospect){ %>
+                <tr>
+                  <td><%= prospect.id %></td>
+                  <td><%= prospect.name %></td>
+                  <td>  <%=prospect.handler%></td>
+                  <td>       
+                 <a href="/allprospectpage/<%=prospect._id%>" class="btn btn-info">details</a>
+                  </td>
+                   
+                </tr>
+         <% }); %>
+</tbody>
+</table>
+</table>
+</div>
+
+
+<% include ../partials/footer %>
+
+
+
+

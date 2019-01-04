@@ -1,0 +1,138 @@
+
+ 
+<% include ./partials/header %>
+<section  >   
+<picture>
+
+        <img class="mySlides" src="https://www.divalto.com/app/uploads/2016/09/slide1.jpg" style="position:relative; max-width:100%;height:500px;">
+              
+        <img class="mySlides" src="https://www.divalto.com/app/uploads/2016/09/slide2.jpg"  style="position:relative; max-width:100%;height:500px;">
+    
+       <img class="mySlides" src="https://www.divalto.com/app/uploads/2016/09/mobilite-commerciaux.jpg" style="position:relative; max-width:100%;height:500px;">
+     </picture>
+
+    <div class="container centered">
+    <div class="row">
+        <div class="col-md-12">
+                  <h1 >ERP powered by</h1><h1   id="b"> Mobilyte Technologies </h1>
+                    <h4 >Our ERP software can easily be adapted to your business
+                    <br>    </h4>
+                    <a href="/login"><button type="button" class="btn btn-primary btn-md ">Login</button></a>
+                    <a href="/register"> <button type="button"  class="btn btn-success btn-md">Signup</button></a>
+                 
+            
+        </div>
+    </div>
+</div>
+
+
+           
+</section>
+<script>
+        // Automatic Slideshow - change image every 4 seconds
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 4000);
+        }
+        </script>
+    
+
+<div class="container" >
+	<div class="row">
+		<div class=" col-sm-4">
+		    <div >
+		        
+
+        		<picture>
+                		<figure id="my">
+                			<div ><img src="https://www.divalto.com/app/uploads/2014/06/2016-09-14-230x230.png" style="max-width:100%;height:auto;" alt="partnership" title="partnership"  /></div>
+                		</figure>
+        	        </picture>
+                
+        </div>
+
+            </div>
+
+
+  
+		<h3>	<p><strong>Our partnerships abroad are strategic </strong></p> </h3>
+		<br>
+		<br>
+<p>MobiLyte also has knowledge and experience in other fields such as Real Estate, Consumer Services, Manufacturing and so on.</p>
+<p> We are offering our customized and innovative solutions to suit the needs of various industries and segments.</p>
+<p>&nbsp;</p>
+<h3><strong>Become a partner ! </strong></h3>
+
+
+
+    <hr  id="myan">
+
+
+			<h1 class="title-banner" id="id1"   >Mobility infinity – A powerful ERP system</h1>
+<h1 style="margin-left:300px;padding-bottom:50px;;" id="id2">for mid- to large-sized companies</h1>
+			
+		
+<p style="text-align: center;">Mobility infinity is an innovative, simple and integrated ERP (Enterprise Resource Planning) software that helps you <strong>manage your business</strong> and <strong>accelerate your digital transformation</strong>. Completely adapted to your company, Divalto infinity is <strong>the best solution to boost your performance</strong> by simplifying and automating your processes.<br />
+This ERP software includes all features required to cover your company’s needs :</p>
+
+       
+	</div>
+
+
+	<div class="well"  style="background-color:white;border:0px;">
+                <div  class="col-sm-6 col-md-6 ">
+                    <div class="container"  style="padding-top:50px;color:black">
+                                            <table style="border: 0;">
+                                            <tbody style="border: 0;">
+                                            <tr style="border: 0;">
+                                            <td style="border: 0; width: 50%;">
+                                            <ul>
+                                           <i class="zoom fas fa-angle-right">&nbsp;Trade and Supply</i><br>
+                                              <i class="zoom fas fa-angle-right">&nbsp;HRMS &#8211; Human resource management system</i><br>
+                                              <i class="zoom fas fa-angle-right">&nbsp;Manufacturing</i><br>
+                                             <i class=" zoom fas fa-angle-right">&nbsp;CRM</i><br>
+                                             <i class=" zoom fas fa-angle-right">&nbsp;Quality</i><br>
+                                             <i class=" zoom fas fa-angle-right">&nbsp;Project Management</i><br>
+                                              <i class=" zoom fas fa-angle-right">&nbsp;Warehouse Management System</i><br>
+                                             <i class=" zoom fas fa-angle-right">&nbsp;Computerized Maintenance Management System</i><br>
+                                             <i class=" zoom fas fa-angle-right">&nbsp;Mobile application for reps</i><br>
+                                              <i class=" zoom fas fa-angle-right">&nbsp;Extranet / intranet portals</i><br>
+                                            </ul>
+                                            </td>
+                                            
+                                            </tr>
+                                            </tbody>
+                                            </table>
+                               </div>         
+             	</div>
+                                	
+                                	
+                                                            		
+                    			<div class="col-sm-6 col-md-6" >
+                    			   <picture>
+                                    		<figure class="zoomin ">
+                                    			<div ><img style="max-width:100%;height:auto;" src="https://www.divalto.com/app/uploads/2014/06/infinity-dashboard.jpg"  /></div>
+                                    		</figure>
+                                    		</picture>
+                    	</div>
+</div>
+
+ </div>
+
+
+
+
+
+
+<% include ./partials/footer %>
+

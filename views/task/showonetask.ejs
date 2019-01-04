@@ -1,0 +1,53 @@
+  <% include ../partials/header %>
+
+                   
+<div class="container-fluid jumbotron padding bot">
+    <div class="row padding">
+    	<div class="col-12">
+    	        <h1 class="display-4 text-center">Task ID: <%= task.id %> - Task Name : <%=task.name%> </h4>		 
+        </div>
+    </div>
+    <div class="row padding">
+        <div class="col-12 padding">
+        <h1 class="welcome">Description</h1>
+    	        <h6 class="welcome "><%= task.description %> </h6>		 
+        </div>
+    </div>
+
+    <div class="row text-center ">
+        <div class="col-md-4 ">
+           <h4>   HANDLED BY : <%= task.handler %>   </h4>
+          
+        </div>
+        
+        
+    
+        <div class="col-md-4">
+       
+            <a href="/alltaskpage/<%= task._id%>/edittask"><button type="button" class="btn btn-primary">Edit</button></a>
+            <form style="display:inline" action="/alltaskpage/<%= task._id %>?_method=DELETE" method="POST">
+                    <button class="btn btn-md btn-danger">Delete</button>
+            </form>
+            
+       
+        </div>
+        
+         <div class="col-md-4 ">
+           <h4>   Client Name : <%= task.clientname %>   </h4>
+          
+        </div>
+        
+    </div>   
+    <div class="row padding">
+        <div class="col-12 padding text-center">
+    	        <a class="btn btn-default" href="/alltaskpage"><i class="fa fa-arrow-left"></i> Go back</a>		 
+        </div>
+    </div>
+    
+</div>
+
+    
+    
+     
+                
+<% include ../partials/footer %>

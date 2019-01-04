@@ -1,0 +1,48 @@
+  <% include ../partials/header %>
+                   
+<div class="container-fluid jumbotron padding bot">
+    <div class="row padding">
+    	<div class="col-12">
+    	        <h1 class="display-4 text-center">Prospect ID:  <%= prospect.id %>- Prospect Name : <%=prospect.name%></h4>		 
+        </div>
+    </div>
+    <div class="row padding">
+        <div class="col-12 padding">
+        <h1 class="welcome">Description</h1>
+    	        <h6 class="welcome "><%= prospect.description %> </h6>		 
+        </div>
+    </div>
+
+    <div class="row text-center ">
+        <div class="col-md-6 ">
+           <h4>   PROSPECT BY : <%= prospect.handler %>   </h4>
+          
+        </div>
+        
+        
+
+        <div class="col-md-6">
+       
+                        <a href="/allprospectpage/<%=prospect._id%>/editprospect"><button type="button" class="btn btn-primary">Edit</button></a>
+                            <form style="display:inline"  action="/allprospectpage/<%= prospect._id %>?_method=DELETE" method="POST">
+                            <button class="btn btn-md btn-danger">Delete</button>
+                        </form>
+                      
+       
+        </div>
+        
+     
+    </div>   
+    <div class="row padding">
+        <div class="col-12 padding text-center">
+    	          <a class="btn btn-default" href="/allprospectpage"><i class="fa fa-arrow-left"></i> Go back</a>
+        </div>
+    </div>
+    
+</div>
+
+    
+    
+
+                
+<% include ../partials/footer %>

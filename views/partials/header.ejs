@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>  ERP   </title>
+  <!--<meta charset="utf-8">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+  <!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+  <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+  
+  <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">-->
+
+	 <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Complete Bootstrap 4 Website Layout</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link  rel="stylesheet" href="/stylesheets/main.css" type="text/css">
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	
+<script>
+     var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbarid").style.top = "0";
+      } else {
+        document.getElementById("navbarid").style.top = "-120px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+</script> 
+</head>
+
+<body>
+
+     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top" id="navbarid">
+        <div class="container-fluid">
+	<a class="navbar-brand" href="#">
+	<img class="img-responsive "   src=" https://tbncdn.freelogodesign.org/d3ea55d6-9eda-4d8c-9394-8bc5edfa4192-watermark.png?20181219" /></a>
+	<!--https://tbncdn.freelogodesign.org/55cd3a32-adab-4e59-ac71-844a16e72efb-watermark.png?20181219 
+	https://tbncdn.freelogodesign.org/77e22098-99d4-4d7b-bf79-7214286c291c-watermark.png?20181218
+	https://tbncdn.freelogodesign.org/89c80ed9-0a94-4502-8512-23fc750e469f-watermark.png?20181219-->
+  </a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+	<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="nav navbar-nav ml-auto">
+			<li class="nav-item active">	<a class="nav-link" href="/">Home</a>	</li>
+	
+     <% if(!currentUser){ %> 
+      <li class="nav-item active" ><a class="nav-link" href="/register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li class="nav-item active"><a class="nav-link" href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <% } else { %>
+                        <li class="nav-item active"><a class="nav-link" href="/"  >Welcome <%= currentUser.username %></a></li>
+                 <li class="nav-item active"><a class="nav-link" href="/leftnavigation"   >Left Navigation</a></li>
+                  <li class="nav-item active"><a class="nav-link" href="/logout"  >Logout</a></li>
+          <% } %>
+               
+      </ul>	
+	</div>
+</div>
+</nav>
+  
