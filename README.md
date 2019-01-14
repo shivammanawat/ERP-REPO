@@ -1,5 +1,5 @@
 # ERP-REPO
-This project was developed in cloud 9 environement Camping Website with the help of Html, CSS, JS, Express, Nodejs and MongoDB
+This project was developed in cloud 9 environement ERP Website with the help of Html, CSS, JS, Express, Nodejs and MongoDB
 
 Download and run by installing ths Node, Express, Mongodb
 
